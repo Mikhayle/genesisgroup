@@ -1,0 +1,326 @@
+@media screen and (max-width: 1600px) {
+    .hero__content {
+        margin-left: 66.33% !important;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .hero__content {
+        width: 23%;
+        margin-left: 73.33% !important;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .hero {
+        background-image: url('../img/hero_1200.png');
+    }
+
+    .hero .container .row {
+        justify-content: space-between;
+        height: 437px;
+    }
+
+    .hero__content {
+        width: 29%;
+        margin-left: 64.33% !important;
+    }
+
+    .services__item:not(:nth-child(3n)) {
+        margin-right: 0;
+    }
+
+    .services__item {
+        flex: 0 0 26%;
+        max-width: 26%;
+    }
+
+    .projects__item_content:first-child {
+        margin: 231px 120px 0 97px;
+    }
+
+    .projects__item_content:last-child {
+        margin: 288px 0 0 120px;
+    }
+
+    .footer__item_title {
+        font-size: 22px;
+    }
+    
+}
+
+
+@media screen and (max-width: 992px) {
+   .header {
+        padding-bottom: 0;
+    }
+
+    .header .container {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .header>.container>.row {
+        width: 30%;
+    }
+
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 4;
+      }
+    
+      .header__burger span {
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        top: 9px;
+        background: #3C3C3C;
+      }
+    
+      .header__burger:before,
+      .header__burger:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: #3C3C3C;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: all 0.3s ease-out;
+      }
+    
+      .header__burger:before {
+        top: 0;
+      }
+    
+      .header__burger:after {
+        bottom: 0;
+      }
+    
+      .header__burger.active:before {
+        transform: rotate(45deg);
+        top: 9px;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: all 0.3s ease-in;
+    
+      }
+      .header__burger.active:after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+        transition: all 0.3s ease-in;
+      }
+    
+      .header__burger.active > span {
+        transform: scale(0);
+      }
+
+      .header__menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        z-index: 3;
+        padding-top: 120px;
+        text-align: center;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: all 0.5s;
+      }
+    
+      .header__menu.active {
+        top: 0;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: all 0.5s;
+      }
+    
+      .header__menu ul {
+        display: block;
+      }
+    
+      .header__menu ul li {
+        margin-bottom: 7vh;
+        font-size: 16px;
+      }
+
+    .hero .container .row {
+        height: 380px;
+    }
+
+    .hero__text {
+        font-size: 16px;
+    }
+
+    .hero__content {
+        width: 35%;
+    }
+
+    .services .container .row {
+        justify-content: space-evenly;
+    }
+
+    .services__item {
+        flex: 0 0 50%;
+        max-width: 40%;
+    }
+
+    .projects__item_content {
+        width: 263px;
+    }
+
+    .projects__item_content:first-child {
+        margin: 231px 120px 0 60px;
+    }
+
+    .projects__item_img-yesim {
+        margin: 97px 0 0 60px;
+    }
+
+    .projects__item_content:last-child {
+        margin: 248px 0 0 120px;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .hero {
+        position: relative;
+        background-size: cover;
+    }
+
+    .hero .container .row {
+        justify-content: center;
+        align-items: center;
+        height: 437px;
+    }
+
+    .hero__content {
+        width: 83%;
+        margin-left: 0 !important;
+        z-index: 2;
+    }
+
+    .hero::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(60, 60, 60, 0.7);        
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .projects__item_content:first-child {
+        margin: 231px 45px 0 60px;
+    }
+
+    .projects__item_content:last-child {
+        margin: 248px 0 0 45px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+   .header__logo {
+       font-size: 1.2em;
+       margin: 0;
+   }
+
+   .header__langs_ru,
+    .header__langs_en
+    {
+        width: 28px;
+        height: 20px; 
+        font-size: 0.75em;   
+    }
+
+
+    .services__item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .services__item_text {
+        width: 70%;
+    }
+
+    .projects .container .row {
+        justify-content: center;
+    }
+
+    .projects__item {        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projects__item_img-dialoq {
+        order: 1;
+    }
+
+    .projects__item_img-yesim {
+        margin: 5vh 0 0 0; 
+    }
+
+    .projects__item_content:first-child {
+        margin: 0;
+        order: 2;
+    }
+
+    .projects__item_content:last-child {
+        margin: 0;
+    }
+
+    .request__title {
+        width: 80%;
+    }
+
+    .request__form {
+        width: 80%;
+    }
+
+    .request__form_input {
+        width: 100%;
+    }
+
+    .footer__item:not(:first-child) {
+        margin-top: 8vh;
+    }
+
+    .footer__item_title {
+        margin-bottom: 5vh;
+    }
+
+}
+
+@media screen and (max-width: 578px) {
+    .header .container {       
+        justify-content: space-evenly;
+    }
+
+    .header__langs_ru,
+    .header__langs_en
+    {
+        width: 24px;
+        height: 18px; 
+        font-size: 0.5em;   
+    }
+}
